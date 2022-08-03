@@ -1,0 +1,80 @@
+/* Master Styles */
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+nav {
+    height: 10vh;
+    background-color: #D5D8DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 80vh;
+    background-color: #ABB2B9;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    height: 10vh;
+    background-color: #808B96;
+}
+
+/* Specific Styling */
+
+.brand-wrapper h2 {
+    font-size: 4rem;
+}
+
+.items-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35rem;
+}
+
+.item {
+    padding: 2.5%;
+    background-color: #566573;
+    border-radius: 15px;
+}
+
+.item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2.5%;
+    text-decoration: none;
+    color: black;
+}
+
+.item a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.item p {
+    font-size: 3rem;
+}
+
+/* Icon Styles */
+
+.icon {
+    height: 3rem;
+}
+
+/* Small Screen Adjustments */
+
+@media only screen and (max-width: 600px) {
+    .item p {
+        font-size: 2rem;
+    }
+}
