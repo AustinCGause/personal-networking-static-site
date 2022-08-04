@@ -47,11 +47,7 @@ footer {
 }
 
 .item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 2.5%;
+    display: inline;
     text-decoration: none;
     color: black;
 }
@@ -59,6 +55,14 @@ footer {
 .item a:visited {
     color: black;
     text-decoration: none;
+}
+
+.item > a > img {
+    float: left;
+}
+
+.item > a {
+    text-align: center;
 }
 
 .item p {
