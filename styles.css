@@ -8,18 +8,17 @@
 }
 
 nav {
-    height: 10vh;
-    background-color: #D5D8DC;
+    height: 10vh;;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #D5D8DC
 }
 
 .content {
-    height: 80vh;
-    background-color: #ABB2B9;
     display: flex;
     justify-content: center;
+    background-color: #D5D8DC
 }
 
 footer {
@@ -34,20 +33,23 @@ footer {
 }
 
 .items-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 35rem;
+    gap: 3rem;
+    width: 40rem;
 }
 
 .item {
-    padding: 2.5%;
     background-color: #566573;
-    border-radius: 15px;
+    padding: 2.5%;
+    border-radius: 1rem;
 }
 
 .item a {
-    display: inline;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: black;
 }
@@ -57,16 +59,12 @@ footer {
     text-decoration: none;
 }
 
-.item > a > img {
-    float: left;
-}
-
-.item > a {
-    text-align: center;
-}
-
-.item p {
+.item > a > p {
     font-size: 3rem;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* Icon Styles */
@@ -78,7 +76,13 @@ footer {
 /* Small Screen Adjustments */
 
 @media only screen and (max-width: 600px) {
-    .item p {
-        font-size: 2rem;
+    .item > a > p {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .item > a > p {
+        font-size: 1.5rem;
     }
 }
