@@ -8,17 +8,16 @@
 }
 
 nav {
-    height: 10vh;;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #D5D8DC
+    background-color: 	#F08080;
 }
 
 .content {
     display: flex;
     justify-content: center;
-    background-color: #D5D8DC
+    background-color: 	#F08080;
 }
 
 footer {
@@ -28,8 +27,14 @@ footer {
 
 /* Specific Styling */
 
+.brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .brand-wrapper h2 {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .items-wrapper {
@@ -42,7 +47,7 @@ footer {
 }
 
 .item {
-    background-color: #566573;
+    background-color: 	#CD5C5C;
     padding: 2.5%;
     border-radius: 1rem;
 }
@@ -71,6 +76,15 @@ footer {
 
 .icon {
     height: 3rem;
+}
+
+#identity {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    padding-top: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Small Screen Adjustments */
